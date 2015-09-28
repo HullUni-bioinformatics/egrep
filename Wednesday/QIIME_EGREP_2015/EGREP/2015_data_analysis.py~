@@ -187,7 +187,7 @@ print 'Making main HTML file in %s'%output_directory+'_main_results_file.html'
 def write_html_link(address,text):
     return "<a href=%s >%s</a>"%(address,text)
 
-html = open(output_directory[:-1]+'_main_results_file.html','wt')
+html = open(output_directory+'_main_results_file.html','wt')
 
 for a in file_urls:
     html.write(write_html_link(a,a)+'<br><br>')
