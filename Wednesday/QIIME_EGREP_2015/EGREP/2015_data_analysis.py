@@ -61,7 +61,7 @@ for plate in input_data:
 # Weld fastas
 
 records = []
-length = 200
+length = 210
 print "Welding demultiplexed fastas and trimming to %i bp"%length
 os.mkdir(output_directory+'SplitReads')
 demultiplexed_fasta = output_directory+'SplitReads/seqs.fna'
@@ -82,16 +82,18 @@ output_path = output_directory+'PickedOtus'
 sim = str(0.96)
 pick_otus(demultiplexed_fasta, output_path, similarity=sim)
 
-# Filter out OTUs with less than 5 sequences
+# Filter out OTUs with less than 3 sequences
 
 seqs_otus = output_directory+'PickedOtus/seqs_otus.txt'
 filtered_seqs_otus = output_directory+'PickedOtus/seqs_otus_filtered.txt'
 lines = open(seqs_otus,'r').readlines()
+count = 0
 with open(filtered_seqs_otus,'wt') as hndl:
     for l in lines:
-        if l.count('\t') > 4:
+        if l.count('\t') > 2:
             hndl.write(l)
-
+            count += 1
+print 'There are %i OTUs with more than 2 sequences\n'%count
 # Pick representative set of sequences
 print 'Picking one representatinve sequence read for each OTU ...'
 
@@ -169,7 +171,7 @@ file_urls = add_urls(output)
 
 # ANOSIM
 
-print 'Computing ANOSIM for the treatment categories and for location categories ...'
+print 'Computing ANOSIM for the Forest categories and for Species categories ...'
 
 output_path = output_directory+'ANOSIM'
 forest = compare_categories(beta_diversity_path, mapping, 'Forest', output_path+'_Forest')
@@ -198,7 +200,7 @@ output = alpha_rarefaction(output_biom, mapping, output_path, rep_set_tree)
 file_urls = add_urls(output)
 
 # Print html file
-
+if False:"""
 print 'Repeating all stages for Metazoa only. Starting by extracting Insecta OTUs from the rep set and sequence alignments'
 
 # <codecell>
@@ -255,8 +257,8 @@ forest = compare_categories(beta_diversity_path,mapping, 'Forest',
 species = compare_categories(beta_diversity_path,mapping, 'Species', 
                               output_path+'_Species')
 
-file_urls = add_urls(treatment)
-file_urls = add_urls(location)
+file_urls = add_urls(forest)
+file_urls = add_urls(species)
 
 output_path = output_directory+'CommunitySummaryInsecta'
 
@@ -270,7 +272,7 @@ output = alpha_rarefaction(output_biom, mapping, output_path, rep_set_tree)
 
 
 file_urls = add_urls(output)
-
+"""
 print 'Making main HTML file in %s'%output_directory[:-1]+'_main_results_file.html'
 
 def write_html_link(address,text):
