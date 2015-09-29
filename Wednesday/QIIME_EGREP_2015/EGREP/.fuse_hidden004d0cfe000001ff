@@ -1,0 +1,1 @@
+qiime split_libraries.py -b 8 -f Plate3_1_subset.fasta.gz -M 12 -m .3MappingFile.txt -o 2015_97%_OTUs_results/plate3_demultiplexed_fasta -q Plate3_1_subset.qual.gz

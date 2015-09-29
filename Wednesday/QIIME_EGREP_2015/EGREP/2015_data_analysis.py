@@ -2,11 +2,11 @@ from qiime_wrappers import *
 import os
 from Bio import SeqIO
 
-output_directory = '2015_90%_OTUs_results/'
+output_directory = '2015_EGREP_QIIME_results/'
 
 # Input file names
 
-input_data = {'plate1':{'fasta': 'Plate1_1_subset.fasta.gz', 'qual': 'Plate1_1_subset.qual.gz', 'map': 'MappingFile.txt'},
+input_data = {'plate1':{'fasta': 'Plate1_1_subset.fasta.gz', 'qual': 'Plate1_1_subset.qual.gz', 'map': '.MappingFile.txt'},
               'plate2':{'fasta': 'Plate2_1_subset.fasta.gz', 'qual': 'Plate2_1_subset.qual.gz', 'map': '.2MappingFile.txt'},
               'plate3':{'fasta': 'Plate3_1_subset.fasta.gz', 'qual': 'Plate3_1_subset.qual.gz', 'map': '.3MappingFile.txt'},
               'plate4':{'fasta': 'Plate4_1_subset.fasta.gz', 'qual': 'Plate4_1_subset.qual.gz', 'map': '.4MappingFile.txt'},
@@ -45,6 +45,7 @@ for plate in input_data:
 print 'Sorting sequence reads by sample tags ...'
 
 barcode_length=str(8)
+primer_mismatch = str(8)
 
 for plate in input_data:
     print plate
@@ -52,17 +53,24 @@ for plate in input_data:
     fasta = input_data[plate]['fasta']
     qual = input_data[plate]['qual']
     plate_map = input_data[plate]['map']
-    output = split_libraries(plate_map, fasta, qual, barcode_length, output_directory+outputpath)
+    output = split_libraries(plate_map, fasta, qual, barcode_length,
+                             output_directory+outputpath,
+                             M=primer_mismatch)
     file_urls = add_urls(output)
 
 # Weld fastas
-print "Welding demultiplexed fastas"
+
 records = []
+length = 200
+print "Welding demultiplexed fastas and trimming to %i bp"%length
 os.mkdir(output_directory+'SplitReads')
 demultiplexed_fasta = output_directory+'SplitReads/seqs.fna'
 for plate in input_data:
     records += list(SeqIO.parse(output_directory+"%s_demultiplexed_fasta"%plate+'/seqs.fna',
                                 'fasta'))
+if length:
+    for i in range(len(records)):
+        records[i].seq = records[i].seq[:210]
 SeqIO.write(records, demultiplexed_fasta,'fasta')
 
 # Picking Operational Taxonomic Units (OTUs) through making OTU table
@@ -71,14 +79,23 @@ print 'Clustering reads to OTUs ...'
 
 demultiplexed_fasta = output_directory+'SplitReads/seqs.fna'
 output_path = output_directory+'PickedOtus'
-sim = str(0.9)
+sim = str(0.96)
 pick_otus(demultiplexed_fasta, output_path, similarity=sim)
 
+# Filter out OTUs with less than 5 sequences
+
+seqs_otus = output_directory+'PickedOtus/seqs_otus.txt'
+filtered_seqs_otus = output_directory+'PickedOtus/seqs_otus_filtered.txt'
+lines = open(seqs_otus,'r').readlines()
+with open(filtered_seqs_otus,'wt') as hndl:
+    for l in lines:
+        if l.count('\t') > 4:
+            hndl.write(l)
 
 # Pick representative set of sequences
 print 'Picking one representatinve sequence read for each OTU ...'
 
-seqs_otus = output_directory+'PickedOtus/seqs_otus.txt'
+seqs_otus = filtered_seqs_otus
 rep_set_fasta = output_directory+'rep_set.fasta'
 pick_rep_set(seqs_otus, demultiplexed_fasta, rep_set_fasta)
 
@@ -224,7 +241,7 @@ output = make_otu_heatmap_html(output_biom, output_path)
 file_urls = add_urls(output)
 
 beta_diversity_path = output_directory+'BetaDiversityInsecta'
-rep_set_tree = output_directory+/AlignedRepSet/Insecta_rep_set.tre'
+rep_set_tree = output_directory+'AlignedRepSet/Insecta_rep_set.tre'
 
 output = beta_diversity_through_plots(output_biom, mapping,
                                       beta_diversity_path, rep_set_tree)
@@ -235,7 +252,7 @@ output_path = output_directory+'InsectaANOSIM'
 
 forest = compare_categories(beta_diversity_path,mapping, 'Forest', 
                                output_path+'_Forest')
-species = compare_categories(beta_diversity_path,mappingt, 'Species', 
+species = compare_categories(beta_diversity_path,mapping, 'Species', 
                               output_path+'_Species')
 
 file_urls = add_urls(treatment)

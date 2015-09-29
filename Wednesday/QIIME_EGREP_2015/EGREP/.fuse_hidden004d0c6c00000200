@@ -1,0 +1,1 @@
+qiime split_libraries.py -b 8 --disable_primers -f Plate4_1_subset.fasta.gz -m .4MappingFile.txt -o 2015_90%_OTUs_results/plate4_demultiplexed_fasta -q Plate4_1_subset.qual.gz

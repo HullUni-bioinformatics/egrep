@@ -1,0 +1,1 @@
+qiime alpha_rarefaction.py -i 2015_97%_OTUs_results/otu_table.biom -p alpha_params.txt -m .CombinedMappingFile.txt -t 2015_97%_OTUs_results/AlignedRepSet/rep_set.tre -o 2015_97%_OTUs_results/AlphaDiversity
