@@ -31,6 +31,7 @@ def add_urls(to_add, file_urls=file_urls):
     return file_urls
 
 # Check mapping files
+if False:"""
 print 'Checking mapping files ...'
 
 for plate in input_data:
@@ -158,7 +159,7 @@ print 'Writing OTU hitmap ...'
 output_path = output_directory+'OTU_heatmap'
 output = make_otu_heatmap_html(output_biom, output_path)
 file_urls = add_urls(output)
-
+"""
 # Beta Diversity
 
 print 'Calculating beta diversity (PCA of samples using taxa as variables) ...'
