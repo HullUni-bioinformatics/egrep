@@ -1,49 +1,49 @@
-#SampleID	BarcodeSequence	LinkerPrimerSequence	Forest	Species	Description
-THB.BET	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Betula_pendula	Betula_pendula from Thetford
-THA.OAK	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Quercus_robur	Quercus_robur from Thetford
-THC.OAK	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Quercus_robur	Quercus_robur from Thetford
-THA.BEE	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fagus_sylvatica	Fagus_sylvatica from Thetford
-BWB.BEE	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fagus_sylvatica	Fagus_sylvatica from Bishops_Wood
-BWC.OAK	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Quercus_robur	Quercus_robur from Bishops_Wood
-BWC.BEE	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fagus_sylvatica	Fagus_sylvatica from Bishops_Wood
-BWA.BET	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Betula_pendula	Betula_pendula from Bishops_Wood
-AHC.HAZ	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Corylus_avellana	Corylus_avellana from Alice_Holt
-AHB.BEE	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fagus_sylvatica	Fagus_sylvatica from Alice_Holt
-DNApositive1	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-negative1	TCCTCTAC	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-AHC.ASH	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fraxinus_excelsior	Fraxinus_excelsior from Alice_Holt
-THA.ASH	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fraxinus_excelsior	Fraxinus_excelsior from Thetford
-BWB.HAZ	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Corylus_avellana	Corylus_avellana from Bishops_Wood
-AHB.BET	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Betula_pendula	Betula_pendula from Alice_Holt
-THB.BEE	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fagus_sylvatica	Fagus_sylvatica from Thetford
-BWA.ASH	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fraxinus_excelsior	Fraxinus_excelsior from Bishops_Wood
-AHA.BEE	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fagus_sylvatica	Fagus_sylvatica from Alice_Holt
-BWC.BET	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Betula_pendula	Betula_pendula from Bishops_Wood
-AHA.BET	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Betula_pendula	Betula_pendula from Alice_Holt
-BWA.HAZ	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Corylus_avellana	Corylus_avellana from Bishops_Wood
-DNApositive2	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-negative2	TCCTCTAC	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-BWC.ASH	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fraxinus_excelsior	Fraxinus_excelsior from Bishops_Wood
-BWA.OAK	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Quercus_robur	Quercus_robur from Bishops_Wood
-AHA.OAK	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Quercus_robur	Quercus_robur from Alice_Holt
-BWC.HAZ	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Corylus_avellana	Corylus_avellana from Bishops_Wood
-AHA.HAZ	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Corylus_avellana	Corylus_avellana from Alice_Holt
-AHB.ASH	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fraxinus_excelsior	Fraxinus_excelsior from Alice_Holt
-AHC.OAK	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Quercus_robur	Quercus_robur from Alice_Holt
-BWA.BEE	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fagus_sylvatica	Fagus_sylvatica from Bishops_Wood
-THA.BET	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Betula_pendula	Betula_pendula from Thetford
-AHA.ASH	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fraxinus_excelsior	Fraxinus_excelsior from Alice_Holt
-DNApositive3	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-negative3	TCCTCTAC	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-THB.OAK	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Quercus_robur	Quercus_robur from Thetford
-THB.ASH	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fraxinus_excelsior	Fraxinus_excelsior from Thetford
-BWB.ASH	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fraxinus_excelsior	Fraxinus_excelsior from Bishops_Wood
-AHB.OAK	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Quercus_robur	Quercus_robur from Alice_Holt
-BWB.OAK	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Quercus_robur	Quercus_robur from Bishops_Wood
-AHC.BET	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Betula_pendula	Betula_pendula from Alice_Holt
-BWB.BET	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Betula_pendula	Betula_pendula from Bishops_Wood
-THC.ASH	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fraxinus_excelsior	Fraxinus_excelsior from Thetford
-THC.BEE	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fagus_sylvatica	Fagus_sylvatica from Thetford
-DNApositive4	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
-negative4	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	N/A from N/A
+#SampleID	BarcodeSequence	LinkerPrimerSequence	Forest	Species	Replicate	Description
+THB.BET	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Betula_pendula	THB	Betula_pendula from Thetford
+THA.OAK	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Quercus_robur	THA	Quercus_robur from Thetford
+THC.OAK	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Quercus_robur	THC	Quercus_robur from Thetford
+THA.BEE	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fagus_sylvatica	THA	Fagus_sylvatica from Thetford
+BWB.BEE	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fagus_sylvatica	BWB	Fagus_sylvatica from Bishops_Wood
+BWC.OAK	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Quercus_robur	BWC	Quercus_robur from Bishops_Wood
+BWC.BEE	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fagus_sylvatica	BWC	Fagus_sylvatica from Bishops_Wood
+BWA.BET	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Betula_pendula	BWA	Betula_pendula from Bishops_Wood
+AHC.HAZ	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Corylus_avellana	AHC	Corylus_avellana from Alice_Holt
+AHB.BEE	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fagus_sylvatica	AHB	Fagus_sylvatica from Alice_Holt
+DNApositive1	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	DNApositive1	N/A from N/A
+negative1	TCCTCTAC	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	negative1	N/A from N/A
+AHC.ASH	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fraxinus_excelsior	AHC	Fraxinus_excelsior from Alice_Holt
+THA.ASH	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fraxinus_excelsior	THA	Fraxinus_excelsior from Thetford
+BWB.HAZ	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Corylus_avellana	BWB	Corylus_avellana from Bishops_Wood
+AHB.BET	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Betula_pendula	AHB	Betula_pendula from Alice_Holt
+THB.BEE	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fagus_sylvatica	THB	Fagus_sylvatica from Thetford
+BWA.ASH	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fraxinus_excelsior	BWA	Fraxinus_excelsior from Bishops_Wood
+AHA.BEE	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fagus_sylvatica	AHA	Fagus_sylvatica from Alice_Holt
+BWC.BET	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Betula_pendula	BWC	Betula_pendula from Bishops_Wood
+AHA.BET	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Betula_pendula	AHA	Betula_pendula from Alice_Holt
+BWA.HAZ	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Corylus_avellana	BWA	Corylus_avellana from Bishops_Wood
+DNApositive2	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	DNApositive2	N/A from N/A
+negative2	TCCTCTAC	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	negative2	N/A from N/A
+BWC.ASH	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fraxinus_excelsior	BWC	Fraxinus_excelsior from Bishops_Wood
+BWA.OAK	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Quercus_robur	BWA	Quercus_robur from Bishops_Wood
+AHA.OAK	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Quercus_robur	AHA	Quercus_robur from Alice_Holt
+BWC.HAZ	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Corylus_avellana	BWC	Corylus_avellana from Bishops_Wood
+AHA.HAZ	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Corylus_avellana	AHA	Corylus_avellana from Alice_Holt
+AHB.ASH	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fraxinus_excelsior	AHB	Fraxinus_excelsior from Alice_Holt
+AHC.OAK	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Quercus_robur	AHC	Quercus_robur from Alice_Holt
+BWA.BEE	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fagus_sylvatica	BWA	Fagus_sylvatica from Bishops_Wood
+THA.BET	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Betula_pendula	THA	Betula_pendula from Thetford
+AHA.ASH	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Fraxinus_excelsior	AHA	Fraxinus_excelsior from Alice_Holt
+DNApositive3	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	DNApositive3	N/A from N/A
+negative3	TCCTCTAC	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	negative3	N/A from N/A
+THB.OAK	TCGCCTTA	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Quercus_robur	THB	Quercus_robur from Thetford
+THB.ASH	CTAGTACG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fraxinus_excelsior	THB	Fraxinus_excelsior from Thetford
+BWB.ASH	TTCTGCCT	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Fraxinus_excelsior	BWB	Fraxinus_excelsior from Bishops_Wood
+AHB.OAK	GCTCAGGA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Quercus_robur	AHB	Quercus_robur from Alice_Holt
+BWB.OAK	AGGAGTCC	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Quercus_robur	BWB	Quercus_robur from Bishops_Wood
+AHC.BET	CATGCCTA	GGWACWGGWTGAACWGTWTAYCCYCC	Alice_Holt	Betula_pendula	AHC	Betula_pendula from Alice_Holt
+BWB.BET	GTAGAGAG	GGWACWGGWTGAACWGTWTAYCCYCC	Bishops_Wood	Betula_pendula	BWB	Betula_pendula from Bishops_Wood
+THC.ASH	CCTCTCTG	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fraxinus_excelsior	THC	Fraxinus_excelsior from Thetford
+THC.BEE	AGCGTAGC	GGWACWGGWTGAACWGTWTAYCCYCC	Thetford	Fagus_sylvatica	THC	Fagus_sylvatica from Thetford
+DNApositive4	CAGCCTCG	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	DNApositive4	N/A from N/A
+negative4	TGCCTCTT	GGWACWGGWTGAACWGTWTAYCCYCC	N/A	N/A	negative4	N/A from N/A
 
