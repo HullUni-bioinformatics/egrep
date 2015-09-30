@@ -31,7 +31,7 @@ def add_urls(to_add, file_urls=file_urls):
     return file_urls
 
 # Check mapping files
-
+if False:"""
 print 'Checking mapping files ...'
 
 for plate in input_data:
@@ -108,7 +108,8 @@ print 'Matching representative reads with taxonomically identified reference seq
 
 output_path = output_directory+'AssignedTaxonomy'
 rep_set_fasta = output_directory+'rep_set.fasta'
-assign_taxonomy(rep_set_fasta, taxa_ref, fasta_ref, output_path, rdp_max_memory=15000)
+assign_taxonomy(rep_set_fasta, taxa_ref, fasta_ref, output_path,
+                rdp_max_memory=15000, rdp_confidance=str(0.4))
 
 # Align sequences using pynast
 
@@ -147,6 +148,7 @@ print 'Writing OTU summary ...'
 assigned_taxa = output_directory+'AssignedTaxonomy/rep_set_tax_assignments.txt'
 output_biom = output_directory+'otu_table.biom'
 output_path = output_directory+'summary_table.txt'
+seqs_otus = output_directory+'PickedOtus/seqs_otus_filtered.txt'
 make_otu_table(seqs_otus, assigned_taxa, output_biom, output_path)
 file_urls = add_urls(output_path)
 
@@ -157,11 +159,11 @@ print 'Writing OTU hitmap ...'
 output_path = output_directory+'OTU_heatmap'
 output = make_otu_heatmap_html(output_biom, output_path)
 file_urls = add_urls(output)
-
+"""
 # Beta Diversity
 
 print 'Calculating beta diversity (PCA of samples using taxa as variables) ...'
-
+output_biom = output_directory+'otu_table.biom'
 beta_diversity_path = output_directory+'BetaDiversity'
 rep_set_tree = output_directory+'AlignedRepSet/rep_set.tre'
 output = beta_diversity_through_plots(output_biom, mapping,
@@ -199,7 +201,6 @@ output_path = output_directory+'AlphaDiversity'
 output = alpha_rarefaction(output_biom, mapping, output_path, rep_set_tree)
 file_urls = add_urls(output)
 
-# Print html file
 if False:"""
 print 'Repeating all stages for Metazoa only. Starting by extracting Insecta OTUs from the rep set and sequence alignments'
 
